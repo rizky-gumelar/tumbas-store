@@ -1,0 +1,146 @@
+body{
+    color: #555;
+}
+.box1{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    padding: 30px;
+    max-width: 1260px;
+    min-height: 480px;
+    margin: auto;
+    justify-content: left;
+}
+.grid1{
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 400px;
+}
+.grid1 img{
+    width: 90%;
+    transition: 0.4s;
+}
+.grid1 img:hover{
+    width: 100%;
+}
+.grid2{
+    background-color: white;
+    padding: 50px;
+    font-size: 30px;
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 800px;
+    position: relative;
+}
+.box1 h3{
+    font-size: 24px;
+}
+.box1 p{
+    font-size: 16px;
+}
+.box1 span{
+    display: flex;
+}
+.box1 span h3{
+    color: rgb(122, 122, 122);
+}
+.rating{
+    margin: 15px 0;
+    display: flex;
+    word-spacing: 5px;
+}
+.rating .fa-star{
+    font-size: 20px;
+}
+.price{
+    color: #ff523b;
+}
+.check{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+.buy{
+    margin-left: 15px;
+    font-size: 16px;
+    padding: 16px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: 0.3s;
+    border: #ff523b 4px solid;
+}
+.buy:hover{
+    margin-left: 15px;
+    color: white;
+    background-color: #ff523b;
+    padding: 16px;
+    border-radius: 15px;
+}
+.cart{
+    font-size: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.cart:hover{
+    color: white;
+    background-color: #ff523b;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+}
+.box2 h2, .box2 p{
+    margin-left: 20px;
+}
+.box2 ul li{
+    margin-left: 40px;
+}
+.calc{
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+    margin-top: 20px;
+    display: flex;
+    width: 120px;
+    height: 40px;
+    justify-content: right;
+    text-decoration: none;
+}
+.calc input{
+    border: 2px silver solid;
+    width: 40px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.calc input:hover{
+    border: 2px silver solid;
+    width: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    background: silver;
+}
+#hasil{
+    border: 2px silver;
+    border-style: solid none solid none;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}

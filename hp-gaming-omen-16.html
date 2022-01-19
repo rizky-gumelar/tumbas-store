@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumbas Store</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="all.js"></script>
+    <script>
+        var i = 0;
+        function fAdd(){
+            i = i+1;
+            if(i > 10){
+                i = 10;
+            }
+            document.getElementById("hasil").innerHTML=i;
+        }
+
+        function fSub(){
+            i = i-1;
+            if(i < 0){
+                i = 0;
+            }
+            document.getElementById("hasil").innerHTML=i;
+        }
+    </script>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <div class="container-fluid mx-5 fw-bold">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Tumbas Store" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white bg-dark px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login -->
+    <form>
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0">
+                    <div class="modal-header text-white bg-dark">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-4">
+                        <form>
+                            <div class="mb-3">
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            </div>
+                            <div class="mb-3">
+                            <input type="password" class="form-control" id="passwordd" placeholder="Password" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-danger px-5" value="login" data-bs-dismiss="modal">Login</button>
+                    </div>
+                    <div class="modal-footer justify-content-center p-2">
+                        <a type="button" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#register">Buat akun</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+        <!-- login -->
+
+        <!-- register -->
+    <form>
+        <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0">
+                <div class="modal-header text-white bg-dark">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-4">
+                    <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="fullname" placeholder="Full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="passwordd" placeholder="New password" required>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="submit" class="btn btn-dark px-5" value="register" data-bs-dismiss="modal">Register</button>
+                </div>
+                <div class="modal-footer justify-content-center p-2">
+                    <a type="button" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#login">login</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </form>
+        <!-- register -->
+
+    <br>
+
+    <div class="box1">
+        <div class="grid1">
+            <img src="img/produk4.jpg" alt="">
+        </div>
+        <div class="grid2">
+            <h3>HP Gaming Omen 16 - Black [i7 1115G4-8GB-SSD 512GB]</h3>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <p>&nbsp;|&nbsp;<b>20</b> Penilaian&nbsp;|&nbsp;<b>67</b> Terjual</p>
+            </div>
+            <span>
+                <h3> <del>&ensp;Rp11.000.000&ensp;</del> </h3>
+            <h2 class="price">Rp10.499.000</h2>
+            </span>
+
+            <form class="kalkulator" name="kalkulator" action="">
+                <div class="calc">
+                    <input type="button" value="-" onclick="fSub()">
+                    <div class="font" style="color: rgb(0, 0, 0);" id="hasil">0</div>
+                    <input type="button" value="+" onclick="fAdd()">
+                </div>
+            </form>
+            
+            
+            <div class="check">
+                <a href="" class="cart">Masukkan Keranjang</a>
+                <a href="" class="buy">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <h2>Spesifikasi Produk</h2>
+        <div>
+            <hr>
+            <p>
+                <br>
+                <b>HP Gaming Omen 16</b> <br><br>
+
+                Spesifikasi <br>
+                Brand : HP <br>
+                Color : Black <br>
+                Processor : Intel Core i7 1115G4- 3,0Ghz Up to 4,1Ghz | 2 Core 4 Threads <br>
+                RAM : DDR4 8GB <br>
+                Storage : SSD 512GB NVMe <br>
+                Screen Size : 14' <br>
+                Screen Type : Touch 360° FHD IPS <br>
+                Fingerprint : Yes <br>
+                Keyboard Backlight : Single Backlight <br>
+                OS : Windows 11 <br>
+                Include Office Home & Student : Preinstalled <br>
+                Warranty : 2 Tahun <br> <br>
+
+                Kelengkapan paket <br>
+                Unit Laptop <br>
+                Charger <br>
+                Kabel Power <br>
+                Kartu Garansi <br>
+                Slempang 15' <br>
+            </p>
+        </div>
+    </div>
+
+    <br> <br>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <img src="img/logo - Copy.png" alt="" height="40px">
+            </div>
+            <p class="stxt"><i class="fas fa-map-marker-alt"></i> Jepara, Jawa Tengah</p>
+            <p class="stxt">Social media:</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/rizkysyahg/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/rizkysyahg/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCHBnxfBkVK3eHPnFshXGgtg" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rizky-syah-gumelar/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <!-- tanggal dan waktu -->
+        <h3 align="center" id="tanggal"></h3>
+        <div class="jam_digital" id="jam_digital">
+            <div class="kotak">
+                <p id="jam"></p> <p> : </p> <p id="menit"></p> <p> : </p> <p id="detik"></p>
+            </div>
+        </div>
+        <!-- tanggal dan waktu -->
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 by <span>Rizky Syah Gumelar</span></p>
+        </div>
+    </footer>
+    
+    <!-- <script src="https://kit.fontawesome.com/2cdeb7e939.js"></script> -->
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
